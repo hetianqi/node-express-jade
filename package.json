@@ -1,0 +1,38 @@
+{
+  "name": "imooc",
+  "version": "0.0.1",
+  "description": "imooc movie",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "connect-mongo": "^0.8.1",
+    "cookie-parser": "^1.3.5",
+    "express": "^4.12.4",
+    "express-session": "^1.11.3",
+    "jade": "^1.10.0",
+    "moment": "^2.10.3",
+    "mongoose": "^4.0.4",
+    "morgan": "^1.6.0",
+    "multer": "^0.1.8",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mooc",
+    "movie"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "heron",
+  "license": "ISC"
+}

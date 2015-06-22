@@ -1,0 +1,23 @@
+{
+  "name": "imooc",
+  "version": "0.0.1",
+  "authors": [
+    "heron <449165578@qq.com>"
+  ],
+  "description": "imooc movie",
+  "keywords": [
+    "imooc"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

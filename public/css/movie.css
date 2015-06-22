@@ -1,0 +1,64 @@
+
+body {
+	padding-top: 50px;
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #555;
+	background-color: #e7e7e7;
+}
+
+.navbar-right {
+	margin-right: 0;
+}
+
+.container .row {
+	margin: 0;
+}
+
+.form-tip {
+	margin-bottom: 10px;
+	color: red;
+	text-align: center;
+}
+
+#comment .comment-content {
+	resize: none;
+}
+
+.media-content {
+	min-height: 64px;
+}
+
+.comment-people {
+	font-size: 14px;
+	color: #06a7e1;
+}
+
+.comment-text {
+	font-size: 14px;
+	color: #333;
+}
+
+.page-footer {
+	margin-top: 50px;
+	background-color: #f8f8f8;
+	border-top: 1px solid #e7e7e7;
+}
+
+.page-footer p {
+	text-align: center;
+	line-height: 50px;
+}
+
+#page {
+	text-align: center;
+}
+
+#uploadPoster {
+	display: none;
+}
