@@ -5,7 +5,7 @@ block content
 		.row
 			.panel.panel-default
 				.panel-heading
-					h3 #{keyword}
+					h4 #{keyword}
 				.panel-body
 					each item in movies
 						.col-md-2
@@ -15,7 +15,7 @@ block content
 								.caption
 									h3 #{item.title}
 									p: a.btn.btn-primary(href="./movie/details/#{item.id}", role="button", target="_blank") 观看预告片
-		.row#page
+		#page
 			ul.pagination.success
 				-for (var i = 1; i <= totalPage; i++) {
 					-if (i == currPage) {
