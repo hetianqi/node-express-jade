@@ -2,8 +2,8 @@ extend ../layout
 
 block content
 	.container
-		.row(style="padding: 0 15px;")
-			a(href="/admin/category/add") 添加分类
+		.form-group
+			a.btn-link(href="/admin/category/add") 添加分类
 		table.table.table-hover.table-bordered
 			thead
 				tr
@@ -12,12 +12,13 @@ block content
 					th 更新
 					th 删除
 			tbody
-			each item in categories
-				tr(class="item-id-#{item.id}")
-					td #{item.name}
-					td #{moment(item.meta.createdAt).format('YYYY/MM/DD')}
-					td
-						a(href="/admin/category/update/#{item.id}") 修改
-					td
-						button.btn.btn-danger.del(type="button", data-id="#{item.id}", data-type="category") 删除
+				each item in categories
+					tr(class="item-id-#{item.id}")
+						td #{item.name}
+						td #{moment(item.meta.createdAt).format('YYYY/MM/DD')}
+						td
+							a(href="/admin/category/update/#{item.id}") 修改
+						td
+							a.btn-link.del(href="javascript:", data-id="#{item.id}", data-type="category") 删除
+
 	script(src="/js/list.js")

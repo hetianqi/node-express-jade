@@ -13,7 +13,7 @@ var express = require('express'),
 var app = express(),
 	port = process.env.PORT || 3000,
 	log = console.log,
-	dbUrl = 'mongodb://localhost/imooc';
+	dbUrl = 'mongodb://localhost/imovie';
 
 //连接mongo数据库
 mongoose.connect(dbUrl);

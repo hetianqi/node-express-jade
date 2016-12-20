@@ -2,8 +2,8 @@ extend ../layout
 
 block content
 	.container
-		.row(style="padding: 0 15px;")
-			a(href="/admin/movie/add") 添加电影
+		.form-group
+			a.btn-link(href="/admin/movie/add") 添加电影
 		table.table.table-hover.table-bordered
 			thead
 				tr
@@ -18,19 +18,20 @@ block content
 					th 更新
 					th 删除
 			tbody
-			each item in movies
-				tr(class="item-id-#{item.id}")
-					td #{item.title}
-					td #{item.category.name}
-					td #{item.director}
-					td #{item.country}
-					td #{item.year}
-					td #{moment(item.meta.createdAt).format('YYYY/MM/DD')}
-					td #{moment(item.meta.updateAt).format('YYYY/MM/DD')}
-					td
-						a(href="/movie/details/#{item.id}") 查看
-					td
-						a(href="/admin/movie/update/#{item.id}") 修改
-					td
-						button.btn.btn-danger.del(type="button", data-id="#{item.id}", data-type="movie") 删除
+				each item in movies
+					tr(class="item-id-#{item.id}")
+						td #{item.title}
+						td #{item.category.name}
+						td #{item.director}
+						td #{item.country}
+						td #{item.year}
+						td #{moment(item.meta.createdAt).format('YYYY/MM/DD')}
+						td #{moment(item.meta.updateAt).format('YYYY/MM/DD')}
+						td
+							a.btn-link(href="/movie/details/#{item.id}") 查看
+						td
+							a.btn-link(href="/admin/movie/update/#{item.id}") 修改
+						td
+							a.btn-link.del(href="javascript:", data-id="#{item.id}", data-type="movie") 删除
+						
 	script(src="/js/list.js")

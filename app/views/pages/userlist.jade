@@ -12,16 +12,16 @@ block content
 					th 最后登录时间
 					th 删除
 			tbody
-			each item in users
-				tr(class="item-id-#{item.id}")
-					td #{item.name}
-					td #{item.password}
-					if item.role == 1
-						td 管理员
-					else 
-						td 普通用户
-					td #{moment(item.meta.createdAt).format('YYYY/MM/DD')}
-					td #{moment(item.meta.updateAt).format('YYYY/MM/DD')}
-					td
-						button.btn.btn-danger.del(type="button", data-id="#{item.id}", data-type="user") 删除
+				each item in users
+					tr(class="item-id-#{item.id}")
+						td #{item.name}
+						td #{item.password}
+						if item.role == 1
+							td 管理员
+						else 
+							td 普通用户
+						td #{moment(item.meta.createdAt).format('YYYY/MM/DD')}
+						td #{moment(item.meta.updateAt).format('YYYY/MM/DD')}
+						td
+							a.btn-link.del(href="javascript:", data-id="#{item.id}", data-type="user") 删除
 	script(src="/js/list.js")
